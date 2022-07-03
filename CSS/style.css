@@ -1,0 +1,51 @@
+a {
+	text-decoration: none;
+}
+/* Navbar */
+#navbar {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: #f1f1b3;
+	align-items: justify;
+	position: relative;
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* Project Name */
+#project-name {
+	width: 30%;
+	padding: 5px 5px 5px 20px;
+	margin: auto 0;
+	text-align: center;
+	font-size: 2.5em;
+	background-color: rgba(137, 230, 87, 0.615);
+}
+
+/* Logo */
+#logo {
+	width: 30%;
+	margin: auto;
+	text-align: center;
+}
+
+#navbar-items {
+	width: 50%;
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 5px 20px;
+}
+
+#navbar-items > .navbar-item {
+	margin: auto 20px;
+	padding: 5px;
+	font-size: 1.3em;
+	position: relative;
+	float: right;
+}
+
+.navbar-item:hover {
+	background-color: rgb(14, 206, 212);
+}
