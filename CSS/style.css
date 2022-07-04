@@ -1,51 +1,82 @@
-a {
-	text-decoration: none;
-}
-/* Navbar */
-#navbar {
-	display: flex;
-	flex-wrap: nowrap;
-	background-color: #f1f1b3;
-	align-items: justify;
-	position: relative;
-	float: right;
-	margin: 0;
+/* All Design */
+* {
 	padding: 0;
-	width: 100%;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
 }
 
-/* Project Name */
-#project-name {
-	width: 30%;
-	padding: 5px 5px 5px 20px;
-	margin: auto 0;
-	text-align: center;
-	font-size: 2.5em;
-	background-color: rgba(137, 230, 87, 0.615);
+
+/* Hero Section Design */
+#hero {
+	height: 100vh;
+	width: 100%;
+	background-image: url(../images/background-image.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/* Navbar Section */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 10% 0 10%;
 }
 
 /* Logo */
 #logo {
-	width: 30%;
-	margin: auto;
+	color: white;
+	font-size: 50px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+/* Span in Logo */
+#logo>span {
+	color: #cc0000;
+}
+
+/* List Items */
+nav>ul>li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 25px;
+}
+
+nav>ul>li>a {
+	text-decoration: none;
+	color: white;
+	font-weight: 800;
+	text-transform: capitalize;
+	transition: transform 0.4s;
+}
+
+nav>ul>li>a:hover {
+	color: #cc0000;
+	transition-delay: 0.4;
+	transform: scale(1.2);
+}
+
+/* Button Design */
+.btn {
+	text-decoration: none;
+	background-color: #cc0000;
+	color: white;
 	text-align: center;
+	text-transform: capitalize;
+	font-weight: 800;
+	padding: 10px 25px;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	box-shadow: 10px 1px 40px #ff1a1a;
 }
 
-#navbar-items {
-	width: 50%;
-	display: flex;
-	flex-wrap: nowrap;
-	margin: 5px 20px;
-}
-
-#navbar-items > .navbar-item {
-	margin: auto 20px;
-	padding: 5px;
-	font-size: 1.3em;
-	position: relative;
-	float: right;
-}
-
-.navbar-item:hover {
-	background-color: rgb(14, 206, 212);
+.btn:hover {
+	background-color: white;
+	color: #cc0000;
+	transition-delay: 0.5;
+	box-shadow: 10px 1px 40px #e6e6e6;
+	transition: transform 0.4s;
+	transform: scale(1.2);
 }
